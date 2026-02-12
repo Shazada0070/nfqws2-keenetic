@@ -365,7 +365,7 @@ header{
 }
 .top-2{
     padding: 25px 0px;
-    margin-top: 20px;
+    margin-top: 25px;
     padding-bottom: 0px;
 }
 .top-2 h1{
@@ -734,22 +734,25 @@ align-self: flex-start;
     font-weight: 600;
 }
  
-}
 .bottom-7 p {
     text-align: center;
     font-size: 9px;
     font-weight: 400;
     width: 40%;
 }
-.bottom-7 a{
+.get-in{
     text-decoration: none;
-    color: #000;
-    border: 1px solid #000;
-    padding: 5px 20px;
+    outline: none;
+    border: 1px solid transparent;
+    color: #fff;
+    background: green;
+    border-radius: 5px;
+    padding: 10px 20px;
 }
-.bottom-7 a:hover{
-    background: #000;
-    color: #fff!important;
+.get-in:hover{
+    background: #ffff;
+    color: green;
+    border: 1px solid green;
 }
 .test-bg img{
     height: 500px;
@@ -832,7 +835,7 @@ footer{
     justify-content: space-evenly;
     font-size: 15px;
 }
-.sec-1>p{
+.sec-1 p{
     margin: 20px 0px;
     padding-right: 30px;
 }
@@ -1015,8 +1018,7 @@ border-bottom: 1px solid green;
 .footer-nav-anime:hover::before{
     width: 100%;
 }
-@media(min-width:1300px){
-
+@media screen and (max-width: 1300px) and (min-width: 768px){
     .right-5 {
         height: 91vh;
         width: 50%;
@@ -1086,7 +1088,7 @@ border-bottom: 1px solid green;
     bottom: -2%;
    } 
 }
-@media(max-width:768px){
+@media screen and (max-width: 768px) and (min-width: 480px){
     /* Header   */
     header{
         height: 70vh;
@@ -1268,11 +1270,18 @@ footer{
 
 
 @media(max-width:480px){
+    .portfolio-container{
+        position: relative;
+    height: 1980px;
+    left: 60px;
+}
+    .navbar-ul{
+display: none;    }
 
     /* Header  */
     .view-more{
         position: relative;
-        left: 140px;
+        left: 185px;
     }
     .view-more:hover {
     background: #ffff;
@@ -1323,7 +1332,7 @@ footer{
         margin: 0;
         padding: 0;
         z-index: 100;
-        top: 0px;
+        top: 20px;
         left: 145px;
     }
     .right-img{
@@ -1367,7 +1376,13 @@ footer{
    
    
     }
-   
+    .help {
+        position: relative;
+        left: 102px;
+        width: 214px;
+        top: 20px;
+        height: 44px;
+    }
  
     
    
@@ -1405,8 +1420,8 @@ footer{
     }
     /* Section 2 */
     .section-2{
+        height: 100%;
             flex-direction: column;
-           min-height: 870px;
     }
     .left-2{
         width: 100%!important;
@@ -1416,7 +1431,13 @@ footer{
     }
     .top-4{
         position: relative;
-    left: -40px;
+        left: -10px;
+        margin: 20px;
+    }
+    .form-up {
+        width: 70%;
+        height: 100%;
+        flex-wrap: wrap;
     }
     .about-image {
        
@@ -1437,6 +1458,7 @@ footer{
 
 /* Section 3 */
 .section-3{
+    height: 100%;
   
     /* min-height: 110vh; */
 }
@@ -1455,6 +1477,20 @@ footer{
 .view-more{
     top: 25px;
 }
+.get-in{
+        text-decoration: none;
+        outline: none;
+        border: 1px solid transparent;
+        color: #fff;
+        background: green;
+        border-radius: 5px;
+        padding: 10px 20px;
+}
+    .get-in:hover{
+        background: #ffff;
+        color: green;
+        border: 1px solid green;
+    }
 /* Section 5 */
 .sec-5-box{
     flex-direction: column;
@@ -1471,6 +1507,7 @@ footer{
 
 /* Section 6 */
 .section-6{
+    height: 100%;
     flex-direction: column;
 }
 .left-6{
@@ -1494,6 +1531,10 @@ footer{
     left: -7px;
 
 }
+.test-down{
+    width: 90%;
+    padding: 0px 30px;
+}
 .inner-right{
            top: 10%;
     right: 0%;
@@ -1502,7 +1543,7 @@ footer{
 .section-7{
     min-height: 75vh;
 }
-.top-1, .top-2{
+.top-1, .top-2 {
     position: relative;
     z-index: 10;
 }
@@ -1516,21 +1557,10 @@ z-index: 100;
     width: 100%!important;
 }
 .test-bg{
-    /* position: relative; */
-        max-width: 180px;
-        max-height: 200px;
-        
-    right: 0%;
-    top: 97%;
-    
+display: none;   
 }
 .test-bg img{
-        height: 344px;
-        object-fit: cover;
-        position: relative;
-        /* top: -24px; */
-        right: 150px;
-        bottom: 93%;
+display: none;
 }
 .grass-bottom{
     min-width:  100%;
@@ -1538,13 +1568,21 @@ z-index: 100;
 }
 .bottom-7{
     width: 100%;
-    top: 508px;
-    text-align: left;
+    top: 450px;
+    left: 0;
+    text-align: center;
 }
 .bottom-7 h4 {
+    color: rgb(7, 61, 7);
     padding: 0px 0px;
     font-weight: 800;
     font-size: 12px;
+}
+.bottom-7 p {
+    text-align: center;
+    font-size: 9px;
+    font-weight: 400;
+    width: 40%;
 }
 /* Footer  */
 footer{
@@ -1565,6 +1603,15 @@ footer{
     
     margin-top: 20px;
 
+}
+.test-up{
+    display: flex;
+align-items: center;
+justify-content: flex-start;
+padding-top: 100px;
+margin-bottom: 20px;
+font-size: 12px;
+width: 307px;
 }
 .sec-3,.sec-4{
     height: 30vh;
@@ -1590,7 +1637,7 @@ footer{
 }
 .lower-right{
         position: relative;
-    left: 30px;
+    left: 0px;
 
 }
 

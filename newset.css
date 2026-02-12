@@ -47,7 +47,7 @@ input.enddiv::placeholder{
     height: 44px;
 
 }
-@media (max-width: 480px){
+/* @media (max-width: 480px){
     .box-up img {
         align-items: center;
         text-align: center;
@@ -85,6 +85,7 @@ right-img img {
             top: 29%;
             left: 60px;
         }
+        
             .bottom-7 {
                 text-align: center;
                 width: 80%;
@@ -110,7 +111,7 @@ right-img img {
                 display: none;
                 opacity: 0;
             }
-}
+} */
 body{
     overflow-x:hidden;
 }
